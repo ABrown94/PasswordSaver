@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Password_Saver" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-OCLH1M7\SQLEXPRESS;Initial Catalog=Password_Saver;Integrated Security=True" SettingsObjectName="PasswordSaver.Properties.Settings" SettingsPropertyName="Password_SaverConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.App" Member="Apps">
+    <Type Name="App">
+      <Column Name="AppID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="AppName" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Username" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
